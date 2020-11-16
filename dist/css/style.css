@@ -1,0 +1,245 @@
+body {
+    background-image: url(../img/sky3.jpg);
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: "Code_Pro_Demo-webfont";
+    src: url(./fonts/Webfonts/codepro_regulardemo_macroman/Code_Pro_Demo-webfont.woff) format("truetype");
+    font-family: "Code_Pro-1";
+    src: url(./font2/Webfonts/codepro_lightdemo_macroman/Code_Pro_Light_Demo-webfont.woff) format("truetype");
+}
+
+.coldiac {
+    font-family: 'coldiac';
+}
+
+.code_pro-1 {
+    font-family: 'Code-Pro-1';
+}
+
+.is-hidden {display: none;} 
+/****HEADER****/
+.search {
+    margin-left: 500px;
+    margin-top: 25px;
+    color: rgb(94, 94, 94); 
+    font-size: 20px;
+}
+
+.search input {
+    height: 30px;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+}
+
+.search button {
+    background-color: indianred;
+    border: 1px solid #DB5461;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    outline: none;
+}
+
+.search button:hover {
+    background-color: white;
+    color: #DB5461;
+}
+
+.num__days {
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+/**************
+****CAROUSEL***
+**************/
+
+.carousel {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+.carousel__track_container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel__track {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slider {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/sky1.jpg);
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.carousel-left {
+    width:40%; 
+}
+
+.carousel-right {
+    width:60%;
+    float: right;
+}
+
+.carousel-left-top{
+    margin: 0px;
+}
+
+
+.carousel-left-bottom{
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.281);
+    height: 185px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+}
+
+.carousel-left-bottom p{
+    font-family: 'Code_Pro-1';
+    color: white;
+}
+
+.carousel-right-top{
+    margin: 0px 0px 75px 80px;
+    bottom: 55px;
+}
+
+.carousel-right-top p{
+    font-family: 'Code_Pro-1';
+    font-size: 50px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+.carousel-right-bottom{
+    position: relative;
+    display: flex;
+    margin: 0px 0px 100px 0px;
+    bottom: 70px;
+}
+
+.weather{
+    position: relative;
+    height: 325px;
+    width: 33%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Code_Pro-1';
+}
+.date-box {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.temp_main {
+    font-family: 'Code_Pro-1';
+    font-size: 230px;
+    margin: 50px 0px 0px 125px;
+    padding: 0px;
+}
+
+.cloud {
+    display: flex;
+    position: relative;
+    left: 120px;
+    bottom: -40px;
+    font-size: 30px;
+    margin: 0px;
+    width: 100%;
+}
+
+.weather-tday {
+    
+    position: relative;
+    left: -100px;
+    bottom: -80px;
+    font-size: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.weather-tday-img {
+    width: 200px;
+    height: 100px;
+    left: 50px;
+}
+
+.weather-icons {
+    position: relative;
+    display: inline;
+    fill: rgb(9, 96, 226);
+    left: 20px;
+    top: 40px;
+}
+
+
+/**************
+****BUTTONS***
+**************/
+.carousel__button {
+    position: absolute;
+    background: rgba(5, 5, 5, 0.021);
+    border: none;
+    top: 35%;
+    padding: 50px 15px 50px 15px;
+    transform: translate(-50%);
+    outline: none;
+}
+
+
+.carousel__button img {
+    height: 50px;
+}
+
+.btn-left {
+    left: -40.25px;
+}
+
+.btn-right {
+    right: -120px;
+}
+
+.btn-right:hover, .btn-left:hover {
+    background: rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+/********/
+.loader {
+    position: relative;
+    margin: 5rem auto;
+    text-align: center;
+    top: 100px; }
+    .loader svg {
+      height: 10.5rem;
+      width: 10.5rem;
+      fill: #F59A83;
+      transform-origin: 44% 50%;
+      animation: rotate 1.5s infinite linear; }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); } }
+
